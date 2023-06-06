@@ -6,6 +6,7 @@ import {
 
 import Layout from '@/layout/index.vue'
 import nested from './modules/nested'
+import simple from './modules/simple'
 import customComponents from './modules/customComponents'
 
 // 配置路由信息
@@ -205,6 +206,7 @@ export const asyncRoutes = [
   },
 
   nested,
+  simple,
 
   {
     path : '/table',

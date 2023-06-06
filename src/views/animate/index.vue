@@ -31,7 +31,7 @@ import MoJs from '@mojs/core'
 import DogJSON from './lottie/dogJson.json'
 
 defineOptions( {
-  name : 'Animate'
+  name : 'Animates'
 } )
 
 // new MoJs.Timeline()
