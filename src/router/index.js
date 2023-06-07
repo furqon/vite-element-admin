@@ -5,9 +5,9 @@ import {
 } from 'vue-router'
 
 import Layout from '@/layout/index.vue'
-import nested from './modules/nested'
+// import nested from './modules/nested'
 import simple from './modules/simple'
-import customComponents from './modules/customComponents'
+// import customComponents from './modules/customComponents'
 
 // 配置路由信息
 export const constantRoutes = [
@@ -76,7 +76,7 @@ export const asyncRoutes = [
     component : Layout,
     redirect : '/dashboard',
     meta : {
-      title : '主页'
+      title : 'Dashboard'
     },
     children : [
       {
@@ -84,7 +84,7 @@ export const asyncRoutes = [
         name : 'Dashboard',
         component : () => import( '@/views/dashboard/index.vue' ),
         meta : {
-          title : '主页',
+          title : 'Dashboard',
           icon : 'dashboard',
           noCache : true,
           affix : true
@@ -92,6 +92,8 @@ export const asyncRoutes = [
       }
     ]
   },
+  simple,
+  /*
   {
     path : '/icon',
     name : 'Icon',
@@ -206,7 +208,7 @@ export const asyncRoutes = [
   },
 
   nested,
-  simple,
+  // simple,
 
   {
     path : '/table',
@@ -306,6 +308,7 @@ export const asyncRoutes = [
       }
     ]
   },
+  */
 
   {
     path : '/:pathMatch(.*)',

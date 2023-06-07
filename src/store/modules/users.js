@@ -12,7 +12,7 @@ const useUserStore = defineStore( {
       token : cookies.get( TOKEN ),
       uid : '9527',
       avatar : AVATAR,
-      name : '灰是小灰灰的灰',
+      name : 'Joni',
       phone : '15988888888',
       email : '454539387@qq.com',
       identity : '',

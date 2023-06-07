@@ -40,19 +40,19 @@
         <template #dropdown>
           <el-dropdown-menu>
             <router-link to="/user/index">
-              <el-dropdown-item>个人中心</el-dropdown-item>
+              <el-dropdown-item>Menu</el-dropdown-item>
             </router-link>
-            <router-link to="/">
+            <!-- <router-link to="/">
               <el-dropdown-item>首 页</el-dropdown-item>
-            </router-link>
+            </router-link> -->
             <a target="_blank" href="https://github.com/mvpyb">
               <el-dropdown-item>Github</el-dropdown-item>
             </a>
             <a target="_blank" href="https://gitee.com/simmon_page">
-              <el-dropdown-item>码 云</el-dropdown-item>
+              <el-dropdown-item>Gitee</el-dropdown-item>
             </a>
             <el-dropdown-item divided @click="logout">
-              <span style="display: block">登 出</span>
+              <span style="display: block">Logout</span>
             </el-dropdown-item>
           </el-dropdown-menu>
         </template>
